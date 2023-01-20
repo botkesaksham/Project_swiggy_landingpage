@@ -1,0 +1,415 @@
+/* navbar */
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  margin-bottom: -2%;
+}
+
+#navbar {
+  display: flex;
+  flex-direction: row;
+  height:525px;
+}
+#left{
+    height: 20rem;
+}
+
+#right{
+    background-image: url("swig.jpeg");
+    width: 100vw;
+    background-repeat: no-repeat;
+    background-size:cover;
+    background-position: center center;
+    margin-left: 3rem;
+    overflow: hidden;
+    /* margin-top: -16px; */
+  }
+  
+.nav ul {
+  display: flex;
+  height: 150px;
+}
+
+.nav li {
+  list-style: none;
+}
+
+.swiggy {
+  background-image: url("swigy.png");
+  background-size: 100%;
+  background-repeat: no-repeat;
+  width: 180px;
+  height: 90px;
+  margin-top: 46px;
+}
+
+.log {
+  margin-top: 55px;
+  text-size-adjust: 20px;
+  width: 90px;
+  height: 40px;
+  margin-left: 250px;
+  color: black;
+  background-color: white;
+  border: white;
+  font-family: ProximaNova,arial,Helvetica Neue,sans-serif;
+  font-size: 15px;
+  font-weight: 600;
+}
+
+.log:hover {
+  color: orange;
+  cursor: pointer;
+}
+
+.sign {
+  margin-top: 55px;
+  width: 110px;
+  height: 40px;
+  background-color: black;
+  color: white;
+  font-family: ProximaNova,arial,Helvetica Neue,sans-serif;
+  font-size: 15px;
+  font-weight: 600;
+
+}
+
+.sign:hover {
+  cursor: pointer;
+}
+
+
+
+.below {
+  font-size: 23px;
+  padding-left: 25px;
+  font-family: ProximaNova,arial,Helvetica Neue,sans-serif;
+  color: rgb(118, 117, 117);
+  margin-top: -10px;
+}
+
+.form {
+  width: 480px;
+  height: 55px;
+  margin-left: 25px;
+  margin-top: 15px;
+  padding-left: 20px;
+  font-size: 18px;
+  font-family: ProximaNova,arial,Helvetica Neue,sans-serif;
+  border: 1px solid rgb(144, 144, 144);
+  border-right: none;
+  margin-bottom: 9px;
+}
+
+.form:hover {
+  border: 1px solid darkorange;
+}
+
+.formbutton {
+  height: 60px;
+  width: 130px;
+  padding: 10px;
+  border: 2px solid orange;
+  background-color: darkorange;
+  color: white;
+  font-size: 18px;
+  margin-left: -4px;
+  font-weight: 600;
+}
+
+.formbutton:hover {
+  cursor: pointer;
+}
+
+.formbelow {
+  font-size: 14px;
+  padding-left: 25px;
+  font-family: ProximaNova,arial,Helvetica Neue,sans-serif;
+  color: rgb(158, 157, 157);
+  margin-bottom: -5px;
+}
+
+.cities li {
+  list-style: none;
+  padding: 5px;
+  font-family: ProximaNova,arial,Helvetica Neue,sans-serif;
+  font-size: 15px;
+  font-weight: 600;
+}
+
+.cities a {
+  text-decoration: none;
+  color: rgb(158, 157, 157);
+}
+
+.cities .dark {
+  color: rgb(97, 96, 96);
+}
+.cities ul {
+  margin-bottom: -20px;
+  display: flex;
+  padding-left: 20px;
+}
+
+.cities li:hover {
+  cursor: pointer;
+}
+
+header {
+  height: 525px;
+}
+
+/* text animation */
+
+.wrapper{
+  margin-top: -30px;
+}
+.wrapper .dynamic{
+  height: 61px;
+  line-height: 73px;
+  overflow: hidden;
+}
+
+.dynamic li{
+  list-style: none;
+  color: rgb(63, 60, 60);
+  font-size: 35px;
+  margin-left: -12px;
+  font-family: ProximaNova,arial,Helvetica Neue,sans-serif;
+  animation: slide 15s steps(5) infinite;
+  position: relative;
+  font-weight: 600;
+  top: 0;
+}
+
+@keyframes slide {
+  100%{
+    top: -380px;
+  }
+  
+}
+
+.dynamic li span{
+  position: relative;
+
+}
+
+.dynamic li span::after{
+  content: "";
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  animation: stop 2s steps(5) infinite;
+
+}
+
+
+
+
+
+/* second section  ordering*/
+#ordering {
+  display: flex;
+  background-color: rgb(39, 23, 23);
+  justify-content: center;
+  align-items: center;
+  width: fit-content;
+  top: 0px;
+}
+
+#ordering img {
+  display: block;
+  height: 180px;
+  top: 0px;
+  margin: auto;
+}
+
+.order {
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  height: 360px;
+}
+
+.hprim {
+  text-align: center;
+  padding-top: 10px;
+  color: white;
+  margin-bottom: -8px;
+}
+
+.op {
+  text-align: center;
+  color: rgb(151, 148, 148);
+  padding-left: 60px;
+  padding-right: 60px;
+}
+
+/* third section contact us*/
+.con {
+  display: flex;
+}
+
+.box1 {
+  width: 100rem;
+}
+
+.box2 {
+  width: 320px;
+  height: 200px;
+  padding-right: 2px;
+  padding-left: 20px;
+}
+
+/* contact images */
+.imgcon {
+  padding: 10px;
+  height: 55px;
+  width: 170px;
+  padding-left: 4px;
+}
+
+.imgcon1 {
+  padding: 10px;
+  height: 55px;
+  width: 170px;
+  margin-left: 22px;
+}
+.imgphone1 {
+  height: 500px;
+  width: 390px;
+}
+
+.imgphone2 {
+  margin-top: 90px;
+  margin-left: 22px;
+  height: 460px;
+  width: 390px;
+}
+
+/* headings */
+.hcon {
+  margin-top: 150px;
+  margin-left: 30px;
+  font-size: 40px;
+  margin-bottom: 20px;
+  font-family: ProximaNova,arial,Helvetica Neue,sans-serif;
+  color: rgb(23, 23, 23);
+}
+
+.pcon {
+  font-size: 20px;
+  margin-left: 30px;
+  margin-bottom: 50px;
+  color: rgb(93, 91, 91);
+  font-family: ProximaNova,arial,Helvetica Neue,sans-serif;
+}
+
+/* company contact legal--section */
+.container {
+  display: flex;
+  background-color: black;
+}
+
+.hmore {
+  margin-top: 70px;
+}
+.hmore a {
+  color: rgb(83, 80, 80);
+  font-family: ProximaNova,arial,Helvetica Neue,sans-serif;
+  text-decoration: none;
+  font-size: 16px;
+  margin-top: 180px;
+  margin-left: 26px;
+}
+
+.box {
+  width: 400px;
+  height: 500px;
+}
+
+.box ul {
+  padding-left: 17px;
+}
+
+.box li {
+  padding: 10px;
+}
+.box li a {
+  font-size: 16px;
+  font-family: ProximaNova,arial,Helvetica Neue,sans-serif;
+  text-decoration: none;
+  color: white;
+}
+
+.box li a:hover {
+  color: whitesmoke;
+  font-size: 16.5px;
+}
+
+.icons {
+  margin-top: 70px;
+  margin-left: 70px;
+  height: 155px;
+  width: 210px;
+}
+
+/*footer */
+.line {
+  height: 1px;
+  background-color: rgb(59, 58, 58);
+}
+
+#footer {
+  display: flex;
+  color: white;
+  justify-content: center;
+  align-items: center;
+  background-color: black;
+}
+.footbox{
+  width: 100vw;
+}
+.hfoot {
+  font-size: 1rem;
+  text-align: center;
+}
+
+.swiggyfoot{
+  padding-left: 1rem;
+  height: 2.7rem;
+  width: 10rem;
+}
+
+.socials{
+  padding-right: 1rem;
+  height: 4rem;
+  width: 12rem;
+  float: right;
+}
+
+.swiggyfoot:hover,
+.socials:hover,
+.icons:hover,
+.imgcon:hover,
+.imgcon1:hover {
+  cursor: pointer;
+}
+
+/* .socials {
+  margin-top: 20px;
+  height: 60px;
+  width: 220px;
+  margin-left: 380px;
+} */
+
+h3 {
+  margin-top: 40px;
+  text-align: center;
+  font-family: ProximaNova,arial,Helvetica Neue,sans-serif;
+  font-size: 17px;
+}
